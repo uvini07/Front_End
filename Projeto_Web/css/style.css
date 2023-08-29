@@ -1,0 +1,473 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'comfortaa', cursive;
+
+}
+
+header {
+
+    background-image: url(../images/img-projeto-pesca/pexels-photo-1630039.jpeg);
+    min-height: 450px;
+    padding: 185px 0;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.container {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+
+}
+
+
+
+.logo {
+
+    position: relative;
+    background-image: url('../images/img-projeto-pesca/7ce7ca5617c14e1ee9fb1e66134462ac-removebg-preview.png');
+    z-index: 2;
+    background-size: 100% 100%;
+    width: 230px;
+    height: 210px;
+    float: left;
+    margin-top: -202px;
+
+}
+
+.menu-desktop {
+    margin-right: 100px;
+    float: right;
+    margin-top: -120px;
+}
+
+.menu-desktop ul {
+
+    list-style: none;
+
+}
+
+.menu-desktop ul li {
+
+    display: inline-block;
+    margin: 0 15px;
+
+}
+
+.menu-desktop a {
+
+    color: rgb(4, 17, 192);
+    text-decoration: none;
+    font-size: 19px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.menu-desktop a :hover {
+    transition: 0.5s;
+    color: #4571ec;
+    box-shadow: 0 4px 0px #4571ec;
+
+
+}
+
+
+
+.menu-mobile {
+    float: right;
+    display: none;
+}
+
+.menu-mobile ul {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 70px 0 30px 0;
+    display: none;
+    text-align: center;
+    background-color: #fff;
+}
+
+.menu-mobile a {
+    text-decoration: none;
+    color: #0b0584;
+    display: block;
+    font-size: 21px;
+}
+
+.chamada {
+    padding: 100px 0;
+
+}
+
+.chamada {
+    color: rgb(0, 30, 255);
+
+}
+
+.chamada h2 {
+    margin-top: 10px;
+    color: #f7faff;
+    font-size: 40px;
+
+
+}
+
+.chamada p {
+    color: #e1e9f7;
+    font-size: 21px;
+    margin-top: 10px;
+
+}
+
+.chamada form {
+
+    margin-top: 15px;
+}
+
+.chamada input[type="email"]:focus {
+    outline: 0;
+}
+
+.chamada input[type="email"] {
+    width: 300px;
+    height: 41px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    border: 0;
+    padding-left: 10px;
+    font-size: 13px;
+    border: 1px solid
+}
+
+.chamada input[type="submit"] {
+    width: 180px;
+    height: 41px;
+    border-radius: 100px;
+    background-color: rgba(0, 30, 255, 0.8);
+    color: #ffff;
+    cursor: pointer;
+    border: 0;
+    font-size: 13px;
+    transition: 1s;
+}
+
+.saber[type="submit"]:hover {
+    background-color: #5b91f7;
+
+
+
+
+}
+
+.img-descricao img {
+    border-radius: 10%;
+    margin-left: 80px;
+    box-shadow: 25px 30px 0px rgb(6, 6, 176);
+
+}
+
+.descricao {
+
+    text-align: center;
+    padding: 35px 0;
+
+}
+
+.descricao p {
+    margin-top: 43px;
+    margin-bottom: 20px;
+    font-size: 25px;
+
+}
+
+.descricao b {
+
+    font-size: 27px;
+}
+
+.texto-descricao {
+    padding: 0 15px;
+    float: left;
+    width: 50%;
+}
+
+.descricao2 img {
+    width: 40%;
+    float: left;
+}
+
+.descricao2 h3 {
+    color: #31475e;
+    font-size: 25px;
+    line-height: 33px;
+    margin-top: 25px;
+}
+
+.texto-descricao p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+.descricao3 {
+    padding: 30px 0 70px 0;
+}
+
+.azul {
+    color: blue;
+
+}
+
+.descricao3 .container {
+    background-image: url(../images/img-projeto-pesca/Design\ sem\ nome\ \(1\).png);
+    margin-top: 110px;
+    background-size: cover;
+    position: relative;
+    min-height: 390px;
+    border-radius: 1%;
+    z-index: 4;
+    box-shadow: 25px 20px 0px rgb(6, 6, 176);
+
+}
+
+
+
+
+
+.depoimento {
+    position: absolute;
+    background-color: #fff;
+    left: 60%;
+    bottom: -30px;
+    max-width: 507px;
+    padding: 40px;
+    box-shadow: 0 8px 20px 0 rgba(13, 55, 243, 0.8);
+}
+
+.depoimento b {
+
+    font-size: 19px;
+    color: rgba(7, 117, 235, 0.97);
+
+}
+
+.titulo-servico {
+    text-align: center;
+}
+
+.combo-produtos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.combo-produtos a {
+    background-color: rgba(42, 3, 236, 0.8);
+}
+
+.combo-produtos a:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
+
+
+.espaco-produto {
+    display: flex;
+    width: 33%;
+    padding: 35px;
+}
+
+.espaco-produto p {
+    margin: 9px 0;
+}
+
+.espaco-produto a {
+    display: inline-block;
+    border: 1px solid rgb(64, 5, 225);
+    color: #ffffff;
+    font-size: 19px;
+    text-decoration: none;
+    padding: 6px 13px;
+    border-radius: 20px;
+}
+
+.box-produtos {
+
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px 0 rgba(66, 64, 64, 0.8);
+
+}
+
+.formulario {
+    padding: 30px 0;
+
+}
+
+.formulario h2 {
+    text-align: center;
+}
+
+.formulario form {
+    margin-top: 10px;
+}
+
+.formulario input[type=text] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 100px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.formulario textarea {
+
+    width: 100%;
+    height: 130px;
+    margin-top: 10px;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid gray;
+
+}
+
+.formulario input[type=submit] {
+    width: 15%;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    background-color: rgba(6, 25, 229, 0.8);
+    color: white;
+    float: right;
+}
+
+footer {
+    margin: 50px 0;
+    border-top: 1px solid gray;
+}
+
+.box-footer {
+
+    margin: 20px 0;
+    float: left;
+    width: 33.33%;
+    padding: 0 15px;
+}
+
+.box-footer p {
+    margin-top: 15px;
+    font-size: 21px;
+}
+
+.box-footer input[type=text] {
+    width: 77%;
+    height: 33px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    padding: 10px;
+
+}
+
+.box-footer button {
+    width: 10%;
+    height: 35px;
+    border: 1px solid rgba(33, 5, 220, 0.8);
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Abaixo codigo de responsividade */
+
+@media screen and (max-width:1024px) {
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .chamada {
+        text-align: center;
+    }
+
+    .chamada input[type="email"] {
+        margin-bottom: 10px;
+    }
+
+    .depoimento {
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        bottom: auto;
+        padding: 30px;
+        width: 80%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .espaco-produto {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 400px;
+        padding: 10px;
+    }
+
+    .box-footer {
+
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .formulario input[type=submit] {
+        width: 20%;
+        height: 45px;
+        font-size: 20px;
+        border-radius: 20px;
+        border: 1px solid gray;
+        background-color: rgba(44, 35, 218, 0.8);
+        color: white;
+        float: right;
+    }
+
+
+
+
+}
+
+/* Definindo medidas para celulares */
+
+@media screen and (max-width:768px) {
+
+    .texto-descricao {
+
+        width: 100%;
+        display: block;
+        float: none;
+    }
+
+    .descricao2 img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        float: none;
+        margin-top: 10px;
+        max-width: 500px;
+    }
+}
