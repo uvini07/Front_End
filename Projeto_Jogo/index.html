@@ -1,86 +1,83 @@
 <!DOCTYPE html>
-
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Documento</title>
-
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./js/blob.js   ">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
-    <!-- Links das Fontes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Karantina&display=swap"
-        rel="stylesheet">
-
-    <!-- Links dos Icones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <title>ViniStation</title>
 </head>
 
 <body>
+    <div class="bg">
 
-    <header><!--Cabeçalho -->
+        <header>
+            <!-- Imagem do logo à direita -->
+            <a href="#home">
+                <h1>VINI</h1>
+            </a>
 
-        <div class="logo">
+            <!-- Lista de links à esquerda -->
 
-        </div>
-
-        <nav class="menu-desktop"><!--Menu para o Computador-->
-            <ul>
-                <li><a href="#"><b>Inicio</b></a></li>
-                <li><a href="#"><b>Portifolio</b></a></li>
-                <li><a href="#"><b>Sobre</b></a></li>
-            </ul>
-
-        </nav>
-        <div class="robo">
-            <img src="./images/img-jogo/robo.svg" alt="">
-        </div>
-        <div class="container">
-
-            <div class="menu-topo">
+            <svg class="menu" xmlns="http://www.w3.org/2000/svg" width="50" height="100" viewBox="0 0 512 512">
+                <path fill="none" stroke="#22262C" stroke-linecap="round" stroke-miterlimit="10" stroke-width="48"
+                    d="M88 152h336M88 256h336M88 36h336" />
+            </svg>
 
 
-                <div class="chamada">
+        </header>
 
-                    <h2>Olá</h2>
+        <section class="home">
+
+
+
+            <div class="container">
+
+                <div class="nav">
+                    <ul class="social-media">
+                        <li> <iconify-icon icon="mdi:github" style="color: #22262c;" width="50"></iconify-icon>
+                        </li>
+                        <li> <iconify-icon icon="ic:baseline-whatsapp" style="color: #22262c;"
+                                width="50"></iconify-icon>
+                        </li>
+                        <li> <iconify-icon icon="mdi:linkedin" style="color: #22262c;" width="50"></iconify-icon>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="middle-home">
+                    <h1 class="home-text">Bem Vindo (a)!</h1>
+
+
+
+                    <img src="./images/0016.png" alt="" class="home-img">
+
                     <p>
-                        chamo-me Marcelo Vinicius e sou CEO da empresa “ViniStation”. Estou disponibilizando meus
-                        projetos, para vocês usufruírem dessas obras de arte!!
+                        Olá! Sou Marcelo Vinicius, CEO da "ViniStation". Estou emocionado por compartilhar nossos
+                        projetos
+                        incríveis com vocês. Na "ViniStation", dedicamos nossa paixão, desde arquitetura até
+                        tecnologia.
+                        Explore nosso portfólio e inspire-se!
                     </p>
 
-                    <form action="">
-                        <input class="saber" type="submit" name="acao" value="Saiba Mais">
-                    </form>
-                    <div class="informacoes">
-                        <a class="btn" href="#">Marcelo Vinicius &copy; 2023</a>
+                    <div class="btn-saber">
+                        <h1>Saber Mais</h1>
                     </div>
-                    <div class="share">
-                        <a target="_blank"
-                            href="https://github.com/uvini07">
-                            <div class="redes">
-                                <img src="./images/img-jogo/github-icon.svg" alt="" class="twitter">
-                            </div>
-                        </a>
-                    </div>
+                </div>
 
+            </div>
+        </section>
+    </div>
 
+    <section class="portfolio">
+        <div class="container">
+            <h1>1-Mario Kart</h1>
+        </div>
 
-
-                </div><!--/Chamada mkt-->
-
-
-            </div><!--/Conteudo Inicial -->
-
-    </header><!--/Cabeçalho -->
-
-
+    </section>
 
 </body>
 
