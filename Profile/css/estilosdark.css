@@ -1,0 +1,49 @@
+.escuro #botao button {
+    animation: moveR 0.5s forwards;
+    background-image: url("../img/lua.svg");
+    background-size: cover;
+    background-color: #0073ffcb;
+
+}
+
+.lista button.dark-mode {
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #2600ff, #0073ff, #04f2ff) border-box;
+    border: 3px solid transparent;
+    color: #fff;
+}
+
+.profile img.dark-mode {
+    filter: drop-shadow(0px 0px 20px #12028c);
+}
+
+.profile p.dark-mode {
+    margin-right: 5px;
+    font-size: 20px;
+    margin-top: -10px;
+    font-weight: 900;
+    font-style: italic;
+    color: #0b40fd;
+    animation: PiscDark 1.5s infinite alternate;
+    text-shadow: 0 0 0.2em rgb(114, 140, 245), 0 0 0.2em rgb(135, 135, 240),
+        0 0 0.2em rgb(148, 148, 255);
+    font-style: bold;
+}
+
+#botao span.dark-mode {
+    background: linear-gradient(rgb(49, 62, 255), rgb(136, 92, 240));
+    margin-top: 0px;
+    display: block;
+    width: 70px;
+    height: 25px;
+    border: 1px solid rgb(65, 59, 241);
+    border-radius: 100px;
+
+
+}
+
+.lista button.dark-mode:hover {
+    transition: 0.7s;
+    outline: 4px solid rgba(10, 67, 255, 0.899);
+}
+
+

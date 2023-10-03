@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/bg-light.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    margin: 60px auto 0px;
+}
+
+.profile {
+    text-align: center;
+    padding: 25px;
+}
+
+.profile img {
+    filter: drop-shadow(0px 0px 10px #0b6926);
+    width: 160px;
+}
+
+
+
+.profile p {
+    margin-right: 5px;
+    font-size: 20px;
+    margin-top: -10px;
+    font-weight: 900;
+    font-style: italic;
+    animation: flicker 1.5s infinite alternate;
+    color: #08a608;
+    text-shadow: 0 0 0.2em rgb(114, 248, 101), 0 0 0.2em rgb(126, 234, 107),
+        0 0 0.2em rgb(169, 252, 117);
+    font-style: bold;
+}
+
+
+#botao {
+    position: relative;
+    width: 70px;
+    margin: 0 auto;
+}
+
+#botao button {
+    background: rgba(45, 179, 4, 0.641) url('../img/sol-.svg') no-repeat center;
+    position: absolute;
+    width: 31px;
+    height: 31px;   
+    border-radius: 50%;
+    border:  solid 1px black;
+    padding: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: moveL 0.5s forwards;
+}
+
+
+#botao button:hover {
+    transition: 0.7s;
+    outline: 5px solid rgba(183, 186, 183, 0.899);
+
+}
+
+#botao span {
+    background: linear-gradient(rgb(98, 240, 108), rgb(3, 171, 68));
+    margin-top: 0px;
+    display: block;
+    width: 70px;
+    height: 25px;
+    border: 1px solid rgb(45, 235, 3);
+    border-radius: 100px;
+
+
+}
+
+
+.lista {
+    margin-top: -1x0px;
+
+}
+
+.lista li {
+    list-style-type: none;
+    display: grid;
+    gap: 10px;
+    margin: 50px auto auto;
+    width: 400px;
+    height: 250px;
+
+}
+
+.lista button {
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #28b65a, #56ff30, #31ab5c, #7ffc63) border-box;
+    border-radius: 100px;
+    border: 3px solid transparent;
+}
+
+.lista button:hover {
+    transition: 0.7s;
+    outline: 4px solid rgba(22, 255, 1, 0.899);
+}
+
+
+.lista a {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.socialmidia ul {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px
+}
+
+.socialmidia li {
+    list-style-type: none;
+    font-size: 50px;
+}
+
+.linkedin {
+    color: #393ff4;
+    -webkit-filter: drop-shadow(0px 0px 5px rgb(246, 246, 246));
+    filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
+}
+
+
+.instagram {
+    background-image: linear-gradient(to bottom, rgb(2, 84, 197), rgb(241, 30, 171), rgb(245, 175, 55), rgb(208, 224, 64));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+    filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+}
+
+.git {
+    color: #00059a;
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(72, 0, 255, 0.9));
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.9));
+}
+
+
+
+.instagram:hover {
+    transition: 1s;
+    font-size: 60px;
+
+}
+
+.linkedin:hover {
+    transition: 1s;
+    font-size: 60px;
+
+}
+
+.git:hover {
+    transition: 1s;
+    font-size: 60px;
+
+}
+
+
+
+
+/* parte de animações */
+
+@keyframes moveR {
+    from {
+        left: 0;
+
+    }
+
+    to {
+        left: 70%;
+    }
+}
+
+@keyframes moveL {
+    from {
+        left: 70%;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
