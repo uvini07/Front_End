@@ -1,0 +1,234 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'comfortaa', cursive;
+
+}
+
+header {
+
+    background-image: url(../imgs/bg1.svg);
+    background-size: cover;
+    min-height: 450px;
+    max-height: 746.9px;
+    padding: 185px 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    overflow: hidden;
+
+
+}
+
+.container {
+
+    max-width: 1200px;
+    margin: 10 auto;
+    padding: 0 2%;
+
+}
+
+.logo {
+    max-width: max-content;
+    max-height: max-content;
+    margin: -170px auto;
+
+}
+
+.chamada {
+    padding: 200px 0;
+}
+
+
+.chamada h2 {
+    text-align: center;
+    margin-left: 160px;
+    color: #f7faff;
+    font-size: 40px;
+}
+
+.chamada p {
+    color: #e1e9f7;
+    font-size: 21px;
+    width: 1030px;
+    margin: 10px 230px 0px;
+
+}
+
+.box-src {
+    margin: 90px 0px 0px 200px;
+}
+
+.box-src input {
+    margin: 90px 60px;
+    display: grid;
+    background-color: rgba(247, 250, 255, 0);
+    outline: none;
+    border: none;
+    flex: 1;
+    width: 900px;
+    height: 30px;
+    padding-left: 70px;
+    color: #ffffff;
+    box-shadow: 0 4px 0px #ffffff;
+
+}
+
+.box-src ::placeholder {
+    color: #ffffff;
+    text-shadow: 0 0 0.3em rgb(255, 255, 255)
+}
+
+
+.carta {
+    left: 290px;
+    top: 337px;
+    position: absolute;
+    color: white;
+    font-size: 40px;
+
+    text-shadow: 0 0 0.1em rgb(255, 255, 255)
+}
+
+.lock {
+    left: 290px;
+    top: 454px;
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    text-shadow: 0 0 0.1em rgb(255, 255, 255)
+}
+
+.login {
+    gap: 930px;
+    margin: 0px 0px 0px 210px;
+}
+
+.login input[value="Continuar Com o Facebook"] {
+    cursor: pointer;
+    margin: 0px 0px 10px 40px;
+    font-style: bold;
+    color: white;
+    width: 425px;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #2359AA;
+    border: none;
+}
+
+.login input[value="Continuar Com o Google"] {
+    cursor: pointer;
+    font-style: bold;
+    color: rgb(0, 0, 0);
+    width: 425px;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #ffffff;
+    border: none;
+}
+
+.login i {
+    font-size: 30px;
+    position: absolute;
+    margin: 7px;
+    margin-left: 50px;
+    color: #e1e9f7;
+}
+
+.login img {
+    width: 25px;
+    position: absolute;
+    margin: 10px 0px 0px 15px;
+
+    color: #e1e9f7;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .chamada h2 {
+        margin-left: -10px;
+        text-align: center;
+        color: #f7faff;
+        font-size: 30px
+    }
+
+    .chamada p {
+        width: 370px;
+        margin-left: -2px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        /* background-color: #ffffff; */
+    
+    }
+
+    .login input[value="Continuar Com o Facebook"] {
+        position: absolute;
+        margin-left: -200px;
+        margin-top: -60px;
+        cursor: pointer;
+        font-style: bold;
+        color: white;
+        width: 355px;
+        height: 46px;
+        border-radius: 8px;
+        background: #2359AA;
+        border: none;
+        z-index: 1;
+    }
+
+    .login input[value="Continuar Com o Google"] {
+        margin-left: -200px;
+        cursor: pointer;
+        font-style: bold;
+        color: rgb(0, 0, 0);
+        width: 355px;
+        height: 46px;
+        border-radius: 8px;
+        background: #ffffff;
+        border: none;
+    }
+
+    .login i {
+        z-index: 2;
+        font-size: 30px;
+        margin-left:-190px;
+        margin-top: -50px;
+    }
+
+    .login img{
+        margin-top: 12px;
+        margin-left:-185px;
+    }
+
+    .box-src input {
+        margin: 90px 60px;
+        margin-left: -200px;
+        display: grid;
+        background-color: rgba(247, 250, 255, 0);
+        outline: none;
+        border: none;
+        flex: 1;
+        width: 350px;
+        height: 30px;
+        padding-left: 70px;
+        color: #ffffff;
+        box-shadow: 0 4px 0px #ffffff;
+    
+    }
+
+    .carta {
+        left: 10px;
+        top: 375px;
+    }
+    
+    .lock {
+        left: 10px;
+        top: 491px;
+    }
+
+}

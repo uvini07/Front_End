@@ -1,0 +1,207 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'comfortaa', cursive;
+
+}
+
+header {
+
+    background-image: url(../imgs/bg1.svg);
+    min-height: 450px;
+    max-height: 746.9px;
+    padding: 185px 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+
+
+}
+
+.container {
+
+    max-width: 1200px;
+    margin: 10 auto;
+    padding: 0 2%;
+
+}
+
+.logo {
+
+    position: relative;
+    background-image: url('../imgs/Logo.svg');
+    background-size: 100% 100%;
+    width: 280px;
+    height: 250px;
+    float: left;
+    margin-top: -212px;
+    margin-left: 30px;
+
+}
+
+.menu-desktop {
+    margin-right: 60px;
+    margin-top: -170px;
+    float: right;
+    display: flex;
+
+}
+
+.menu-desktop ul {
+    list-style: none;
+}
+
+.menu-desktop ul li {
+    display: inline-block;
+}
+
+.menu-desktop a {
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.menu-desktop img {
+    width: 50px;
+}
+
+.chamada {
+    padding: 81.9px 0;
+
+}
+
+.chamada h2 {
+    margin-top: 90px;
+    margin-left: 10px;
+    color: #f7faff;
+    font-size: 40px;
+}
+
+.chamada p {
+    color: #e1e9f7;
+    font-size: 21px;
+    width: 700px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.chamada form {
+    margin-top: 15px;
+}
+
+.btn {
+    display: flex;
+    gap: 20px;
+}
+
+.chamada input[type="submit"] {
+    font-style: bold;
+    width: 280px;
+    height: 51px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: #bb5400;
+    cursor: pointer;
+    border: 0;
+    font-size: 20px;
+    transition: 1s;
+}
+
+.chamada input[type="submit"]:hover {
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+
+}
+
+@media screen and (max-width: 908px) {
+
+    header {
+
+        background-size: cover;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+    }
+
+
+
+    .menu-desktop {
+        margin-right: 15px;
+        margin-top: -120px;
+        float: right;
+        display: flex;
+
+    }
+
+    .menu-desktop a {
+        margin: 0 auto;
+        color: rgb(255, 0, 0);
+        text-decoration: none;
+        font-size: 10px;
+    }
+
+    .menu-desktop img {
+        display: none;
+    }
+
+
+    .logo {
+        position: absolute;
+        background-image: url('../imgs/Logo.svg');
+        background-size: 100% 100%;
+        width: 300px;
+        height: 250px;
+        top: 200px;
+        left: 20px;
+
+    }
+
+    .chamada {
+        width: max-content;
+        height: max-content;
+    }
+
+    .chamada h2 {
+        margin-top: 20px;
+        margin-left: 40px;
+        color: #ffffff;
+        font-size: 30px;
+        border-radius: 32px;
+        width: 300px;
+        text-align: center;
+    }
+
+    .chamada p {
+        color: #e1e9f7;
+        font-size: 21px;
+        width: 400px;
+        margin-top: 10px;
+        margin-left: -1px;
+        text-align: center;
+    }
+
+    .btn {
+        gap: 10px;
+    }
+
+
+    .chamada input[type="submit"] {
+        margin-top: 80px;
+        margin-left: 10px;
+        font-style: bold;
+        width: 160px;
+        height: 51px;
+        border-radius: 5px;
+        background-color: rgb(255, 0, 0);
+        color: #ffffff;
+        cursor: pointer;
+        border: 0;
+        font-size: 20px;
+        transition: 1s;
+    }
+
+}
