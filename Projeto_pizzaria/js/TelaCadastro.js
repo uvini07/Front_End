@@ -3,31 +3,30 @@ let clientes = [];
 function Cadastro(nome, email, senha, confirmarSenha, telefone, endereco) {
     let verificar = 0;
 
-
     if (nome.length < 10) {
-        console.log("Erro! Por favor, insira seu nome completo")
+        console.log("Erro! Por favor, insira seu nome completo");
     } else {
-        verificar = verificar + 1
-        if (nome.includes("@", "#", "!", "$", "%", "¨", "*", ")", "(", "?", "/", "+", "=", "-", "_")) {
-            console.log("Por favor, digite apenas letras no seu nome")
+        verificar = verificar + 1;
+        if (nome.match(/[^\p{L}]/u)) {
+            console.log("Por favor, digite apenas letras no seu nome");
         } else {
-            verificar = verificar + 1
+            verificar = verificar + 1;
             if (!email.includes("@")) {
-                console.log("E-mail inválido")
+                console.log("E-mail inválido");
             } else {
-                verificar = verificar + 1
-                if (senha.length <= 7 || !senha.includes("@", "#", "!", "$", "%", "¨", "*")) {
-                    console.log("Por favor, digite uma senha com mais de 7 caracteres e utilize pelo menos 1 caractere especial (!,@,#,$,%,¨,&,*)")
+                verificar = verificar + 1;
+                if (senha.length <= 7 || !senha.match(/[^\p{L}0-9]/u)) {
+                    console.log("Por favor, digite uma senha com mais de 7 caracteres e sem caracteres especiais");
                 } else {
-                    verificar = verificar + 1
+                    verificar = verificar + 1;
                     if (senha !== confirmarSenha) {
-                        console.log("As senhas não coincidem")
+                        console.log("As senhas não coincidem");
                     } else {
-                        verificar = verificar + 1
+                        verificar = verificar + 1;
                         if (telefone.length !== 11) {
-                            console.log("Por favor, digite seu número de telefone corretamente")
+                            console.log("Por favor, digite seu número de telefone corretamente");
                         } else {
-                            verificar = verificar + 1
+                            verificar = verificar + 1;
                         }
                     }
                 }
@@ -47,25 +46,23 @@ function Cadastro(nome, email, senha, confirmarSenha, telefone, endereco) {
         });
     }
 }
-
-
 function login(email, senha) {
     if (clientes.length === 0) {
-        console.log("Erro! Nenhum usuário cadastrado.")
-        return
+        console.log("Erro! Nenhum usuário cadastrado.");
+        return;
     }
 
-    const usuario = clientes.find((usuario) => usuario.email === email)
+    const usuario = clientes.find((usuario) => usuario.email === email);
 
     if (!usuario) {
-        console.log("Usuário não encontrado. Verifique o email.")
-        return
+        console.log("Usuário não encontrado. Verifique o email.");
+        return;
     }
 
     if (usuario.senha === senha) {
-        console.log("Login bem-sucedido!")
+        console.log("Login bem-sucedido!");
     } else {
-        console.log("Senha incorreta. Tente novamente.")
+        console.log("Senha incorreta. Tente novamente.");
     }
 }
 
@@ -100,7 +97,7 @@ function comentarios(comentar, email) {
 }
 
 //nome email senha confirmar senha telefone e endereço
-Cadastro("Murilo Caua Marcelo", "joao.matador@gmail.com", "joao@123", "joao@123", "11498593103", {
+Cadastro("maaaaarcelo", "joao.matador@gmail.com", "joao*123", "joao*123", "11498593103", {
     rua: "Rua dos Flox",
     numero: 123,
     CEP: "10779183960",
@@ -108,7 +105,7 @@ Cadastro("Murilo Caua Marcelo", "joao.matador@gmail.com", "joao@123", "joao@123"
     estado: "SP"
 });
 
-login("joao.matador@gmail.com", "joao@123")
+login("joao.matador@gmail.com", "joao@123");
 perfil("joao.matador@gmail.com");
 comentarios("Este é um ótimo produto!", "joao.matador@gmail.com");
-console.log(clientes)
+console.log(clientes);

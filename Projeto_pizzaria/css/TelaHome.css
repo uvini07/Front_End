@@ -1,81 +1,424 @@
-* {
+/* Importação de todas as fontes do site */
+@font-face {
+    font-family: 'myFont';
+    src: url(./font/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: 'myFontRegular';
+    src: url(./font/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'myFontBold';
+    src: url(./font/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(./font/inter/Inter-ExtraBold.ttf);
+}
+
+/* Estilos para o elemento HTML */
+html {
+    scroll-behavior: smooth;
+}
+
+.rect-bar-mobile {
+    display: none;
+}
+
+/* Estilos para o corpo da página */
+body {
+    user-select: none;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'comfortaa', cursive;
-}
-
-body {
-    background-image: url(../imgs/bgHome.svg);
-    background-size: cover;
-    min-height: 450px;
-    max-height: 746.9px;
-    background-position-x: -20px;
-}
-
-.barraLateral {
-    width: 116.186px;
-    height: 748px;
-    background: #F27706;
-}
-
-.categorias ul {
-    display: grid;
-    gap: 20px;
-    margin-left: 25px;
-}
-
-.categorias li {
-    margin-top: 20px;
-    list-style: none;
-    width: 60px;
-    height: 60px;
-    row-gap: 90px;
-    padding-top: 40px;
-    border-radius: 4px;
-    background: #F93030;
-    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
-}
-
-.categorias img{
-    margin-left: -3px;
-    margin-top: 10px;
-    width: 70px;
-}
-
-.categorias i{
-    margin-top: 0px;
-    margin-left: 8px;
-    font-size: 45px;
-    color: white;
-}
-
-.categorias li i{
-    position: absolute;
-    font-size: 40px;
-    margin-top: -30px;
-}
-.pizzasF{
+    height: 130vh;
     display: flex;
-}
-.pizzas{
-    display: flex;
-    margin-top: 300px;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(252, 121, 0, 0.58) 21.22%, rgba(252, 121, 0, 0.31) 100%);
 }
 
-
-
-
-.box {
-    margin-top: -600px;
-    margin-left: 163px;
-    border-radius: 8px;
-    background: #F5F5F5;
+/* Barra lateral */
+.rect-bar-desktop {
     width: 150px;
-    height: 41px;
+    height: 100%;
+    background-color: #F27706;
+    position: fixed;
+    left: 0;
 }
 
-@media screen and(max-width:768px){
-    
-    
+/* Estilização da lista de navegação */
+nav ul li {
+    list-style: none;
+}
+
+/* Caixa de Pesquisa */
+.search-box {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.search-box input {
+    width: 300px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+.search-box button {
+    padding: 6px;
+    position: absolute;
+    left: 85%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Foto De Perfil */
+.rect-bar-desktop .perfil {
+    width: 70%;
+    margin-left: -5px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.perfil:hover {
+    transform: scale(1.2);
+}
+
+/* Barra Lateral Categorias */
+.rect-bar-desktop .ctg {
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.rect-bar-desktop {
+    animation: slideRight 1s ease-in-out;
+}
+
+.ctg:hover {
+    transform: scale(1.2);
+}
+
+#settings {
+    margin-left: 41px;
+
+}
+
+#settings:hover {
+    transform: rotate(360deg);
+    transition: transform 1.0s ease-in-out;
+}
+
+/* Texto Home-Inicio */
+.text-home-desktop {
+    animation: slideDown 0.5s ease-in-out;
+}
+
+.text-home-desktop h1 {
+    font-family: 'myFont';
+    color: #fff;
+    font-size: 36px;
+    margin-left: -10px;
+}
+
+.text-home-desktop p {
+    font-family: 'myFontRegular';
+    font-size: 24px;
+    margin-top: -20px;
+    color: #fff;
+    margin-left: -10px;
+}
+
+.container {
+    width: 88%;
+    height: 100%;
+    margin-left: 190px;
+}
+
+.fav {
+    width: max-content;
+    font-size: 35px;
+    position: absolute;
+    top: 18%;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.fav p {
+    color: #FFF;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.50);
+    font-family: 'myFontBold';
+    font-size: 23px;
+}
+
+.cards {
+    display: flex;
+}
+
+.cards img {
+    margin-right: 50px;
+    width: 320px;
+    border-radius: 15px;
+    height: 200px;
+    filter: drop-shadow(0px 4px 14.300000190734863px rgba(0, 0, 0, 0.25));
+    transition: transform 0.3s ease;
+}
+
+
+
+.cards img:hover {
+    transform: scale(1.1);
+}
+
+.plus {
+    width: max-content;
+}
+
+.promo {
+    width: max-content;
+    font-size: 35px;
+    position: absolute;
+    top: 55%;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.promo p {
+    color: #FFF;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.50);
+    font-family: 'myFontBold';
+    font-size: 23px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    cursor: pointer;
+}
+
+.plus1 p,
+.plus2 p {
+    margin-top: 140px;
+    cursor: pointer;
+}
+
+.bebidas {
+    position: absolute;
+    top: 93%;
+    font-family: 'myFontBold';
+    font-size: 23px;
+    color: #FFF;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.50);
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.bebidas .cards {
+    margin-left: 10px;
+}
+
+.rect-bebidas {
+    width: 380px;
+    height: 120px;
+    background-color: #FFF;
+    margin-right: 30px;
+    display: flex;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.rect-bebidas:hover {
+    transform: scale(1.1);
+}
+
+.rect-bebidas img {
+    width: 22%;
+    height: 80%;
+    margin: 10px 0;
+}
+
+
+
+.rect-bebidas img:hover {
+    transform: none;
+}
+
+.text-container-bebidas {
+    width: max-content;
+    margin: 10px 0;
+}
+
+.text-container-bebidas h1 {
+    font-size: 23px;
+    color: #000;
+    text-shadow: none;
+}
+
+.text-container-bebidas p {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.50);
+    font-family: 'myFontRegular';
+    text-shadow: none;
+    width: 200px;
+    margin-top: -10px;
+}
+
+/* KEYFRAMES COM TODAS AS ANIMAÇÕES */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .rect-bar-mobile {
+        display: block;
+    }
+
+    .rect-bar-desktop {
+        display: none;
+    }
+
+
+    .fav {
+        display: none;
+    }
+
+    .promo {
+        display: none;
+    }
+
+    .search-box {
+        display: none;
+    }
+
+    .text-home-desktop {
+        display: none;
+    }
+
+    .bebidas {
+        display: none;
+    }
+
+    /* Adicione isso ao seu CSS */
+
+    .rect-bar-mobile {
+        position: relative;
+    }
+
+    .barrainicial {
+        display: flex;
+        margin-left: 200px;
+        margin-top: 35px;
+        z-index: 0;
+    }
+
+    .barrainicial h1 {
+        color: white;
+        margin: 5px 70px 0px 70px;
+    }
+
+    .barrainicial p {
+        color: white;
+        position: absolute;
+        left: 305px;
+        top: 60px;
+
+    }
+
+    .menu-button {
+        color: white;
+        margin-top: 10px;
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+    .menu-dropdown {
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 170px;
+        background-color: #F27706;
+        border-radius: 8px;
+        width: 90vh;
+        height: 210px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+    }
+
+    .menu-dropdown a {
+        color: #FFF;
+        text-decoration: none;
+        display: block;
+        padding: 8px 0;
+    }
+
+    .menu-dropdown i {
+        color: #FFF;
+        font-size: 30px;
+        margin-top: 40px;
+        margin-left: 175px;
+        background-color: #F27706;
+        border-radius: 50%;
+    }
+
+    .menu-dropdown a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .menu-button {
+        cursor: pointer;
+    }
+
+    .propaganda{
+        height: 110px;
+        
+    }
+
+    .chef img {
+        background-color:#F27706 ;
+        width: 100px;
+        margin-top: 90px;
+        margin-left: 160px;
+        width: 300px;
+    }
+
 }

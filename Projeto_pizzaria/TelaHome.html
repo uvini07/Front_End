@@ -1,69 +1,229 @@
 <!DOCTYPE html>
-
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Tony's Pizza</title>
-
     <link rel="stylesheet" href="./css/TelaHome.css">
-    <!-- Links das Fontes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Karantina&display=swap"
-        rel="stylesheet">
-
-    <!-- Links dos Icones -->
-    <link REL="SHORTCUT ICON" HREF="./imgs/Logo.svg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="path-to-slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="path-to-slick/slick-theme.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript" src="path-to-jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="path-to-slick/slick.min.js"></script>
 
+    <title>Home</title>
 </head>
 
 <body>
-
-    <div class="barraLateral">
-        <div class="categorias">
+    <!-- Barra lateral -->
+    <div class="rect-bar-desktop">
+        <nav>
             <ul>
-                <img src="./imgs/Profile.svg" alt="">
-                <li> <i class='bx bxs-home'></i> </li>
-                <li> <i class='bx bx-coffee-togo'></i></li>
-                <li> <i class='bx bxs-lemon'></i></li>
-                <li> <i class='bx bxs-pizza'></i> </li>
-                <li> <i class='bx bxs-pizza'></i></li>
-                <li> <i class='bx bxs-food-menu'></i></li>
-                <i  class='bx bx-cog'></i>
+                <!-- Ícone do perfil -->
+                <li><a href="./TelaPerfil.html"><img src="./img/categorias/perfil.svg" alt="" class="perfil"></a></li>
+
+                <!-- Ícones das categorias -->
+                <a href="#"><img src="./img/categorias/Group 1.svg" alt="" class="ctg"></a>
+                <a href="#bebidas"><img src="./img/categorias/Group 2.svg" alt="" class="ctg"></a>
+                <a href="#"><img src="./img/categorias/Group 3.svg" alt="" class="ctg"></a>
+                <a href="#"><img src="./img/categorias/Group 4.svg" alt="" class="ctg"></a>
+                <a href="#"><img src="./img/categorias/Group 5.svg" alt="" class="ctg"></a>
+                <a href="#"><img src="./img/categorias/Group 6.svg" alt="" class="ctg"></a>
+                <!-- Ícone de configurações -->
             </ul>
-        </div>
+        </nav>
+        <a href="">
+            <img id="settings" src="./img/categorias/settings.svg" alt="" class="ctg" class="settings">
+        </a>
     </div>
-    <div class="home">
-        <div class="pizzasF">
-            <div class="box">
-                <img src="./imgs/Pizza1.svg" alt="">
+    <!-- menu mobile -->
+    <div class="rect-bar-mobile">
+        <div class="barrainicial">
+            <div class="menu-button" onclick="dropdownMenu()">
+                <i class='bx bx-menu'></i>
             </div>
-            <div class="box">
-                <img src="./imgs/Pizza1.svg" alt="">
+            <div id="menu-dropdown" class="menu-dropdown">
+                <a href="#">Perfil</a>
+                <a href="#">Clube Tonys</a>
+                <a href="#">Cupons</a>
+                <a href="#">Configurações</a>
+                <a href="#">Endereço</a>
+                <i class='bx bxs-x-circle' onclick="closeDropdown()"></i>
             </div>
-            <div class="box">
-                <img src="./imgs/Pizza1.svg" alt="">
+
+
+            <h1>Home</h1>
+            <p>Bom dia, Celso</p>
+            <a href="./TelaPerfil.html"><img src="./img/categorias/perfil.svg" alt=""></a>
+        </div>
+
+        <div class="propaganda">
+            <div class="chef">
+                <img src=".//imgs/chef.png ">
             </div>
         </div>
 
-        <div class="pizzas">
-            <div class="box">
-                <img src="./imgs/Pizza1.svg" alt="">
+        <div class="categorias"></div>
+
+    </div>
+
+    <!-- Barra de pesquisa -->
+    <div class="search-box">
+        <input type="text" placeholder="Buscar algo para matar a minha fome">
+        <button type="button"><iconify-icon icon="ic:twotone-search"
+                style="font-size: 30px; margin-top: 3px; color: rgb(142, 142, 142);">
+            </iconify-icon>
+        </button>
+    </div>
+
+    <!-- Container -->
+    <div class="container">
+        <!-- Texto da seção Home -->
+        <div class="text-home-desktop">
+            <h1>Home</h1>
+            <p>Bom dia, Celso</p>
+        </div>
+
+        <!-- Seção de pizzas favoritas -->
+        <div class="fav">
+            <p>Minhas pizzas favoritas</p>
+
+            <!-- Cartões de pizzas favoritas -->
+            <div class="cards">
+                <div class="pizzascarrosel" id="carousel">
+                    <a href="#"><img src="./img/favoritas/PizzasF1.svg" alt=""></a>
+                    <a href="#"><img src="./img/favoritas/PizzasF2.svg" alt=""></a>
+                    <a href="#"><img src="./img/favoritas/PizzasF3.svg" alt=""></a>
+                </div>
+
+                <!-- Botão "Ver Mais" com seta -->
+                <div class="plus1">
+                    <p id="verMais">Ver Mais</p>
+                    <iconify-icon icon="maki:arrow" style="font-size: 75px; color: #F24E1E;"
+                        class="arrow"></iconify-icon>
+                </div>
             </div>
-            <div class="box">
-                <img src="./imgs/Pizza1.svg" alt="">
+        </div>
+
+        <!-- Seção de pizzas em promoção -->
+        <div class="promo">
+            <p>Pizzas em Promoção</p>
+
+            <!-- Cartões de pizzas em promoção -->
+            <div class="cards">
+                <div class="promocarrosel" id="promoCarousel">
+                    <a href="#"><img src="./img/recomendadas/Recomendação-1.svg" alt=""></a>
+                    <a href="#"><img src="./img/recomendadas/Recomendação-2.svg" alt=""></a>
+                    <a href="#"><img src="./img/recomendadas/Recomendação-3.svg" alt=""></a>
+                </div>
+
+                <!-- Botão "Ver Mais" com seta -->
+                <div class="plus2">
+                    <p id="verMaisPromo">Ver Mais</p>
+                    <iconify-icon icon="maki:arrow" style="font-size: 75px; color: #F24E1E;"
+                        class="arrow"></iconify-icon>
+                </div>
             </div>
-            <div class="box">
-                <img src="./imgs/Pizza1.svg" alt="">
+        </div>
+
+        <!-- Seção de bebidas -->
+        <div class="bebidas" id="bebidas">
+            <p>Bebidas</p>
+
+            <!-- Cartões de bebidas -->
+            <div class="cards">
+                <div class="rect-bebidas">
+                    <img src="./img/bebidas/coca-cola.png" alt="" class="refri">
+
+                    <!-- Texto informativo sobre a bebida -->
+                    <div class="text-container-bebidas">
+                        <h1>Coca-cola 2L</h1>
+                        <p>Refrigerante Garrafa 3l Embalagem Econômica</p>
+                    </div>
+                </div>
+
+                <div class="rect-bebidas">
+                    <img src="./img/bebidas/coca-cola.png" alt="" class="refri">
+
+                    <div class="text-container-bebidas">
+                        <h1>Coca-cola 2L</h1>
+                        <p>Refrigerante Garrafa 3l Embalagem Econômica</p>
+                    </div>
+                </div>
+
+                <div class="rect-bebidas">
+                    <img src="./img/bebidas/coca-cola.png" alt="" class="refri">
+
+                    <div class="text-container-bebidas">
+                        <h1>Coca-cola 2L</h1>
+                        <p>Refrigerante Garrafa 3l Embalagem Econômica</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- Script para o carrossel de pizzas e promoções -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const carousel = document.getElementById('carousel');
+            const verMaisButton = document.getElementById('verMais');
+            const arrowIcon = document.querySelector('.arrow');
+
+            // Função que faz  avançar o carrossel de pizzas
+            function avancarCarousel() {
+                const images = Array.from(carousel.children);
+                const lastImage = images.pop();
+                images.unshift(lastImage);
+                carousel.innerHTML = '';
+                images.forEach(image => carousel.appendChild(image));
+            }
+
+            // adicona o evento de clique no botão "Ver Mais" e também na arrow("seta")
+            verMaisButton.addEventListener('click', avancarCarousel);
+            arrowIcon.addEventListener('click', avancarCarousel);
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const promoCarousel = document.getElementById('promoCarousel');
+            const verMaisPromoButton = document.getElementById('verMaisPromo');
+            const arrowIconPromo = document.querySelector('.plus2 .arrow');
+
+            // Function que faz avançar só que o carrossel de promoções
+            function avancarCarouselPromo() {
+                const images = Array.from(promoCarousel.children);
+                const lastImage = images.pop();
+                images.unshift(lastImage);
+                promoCarousel.innerHTML = '';
+                images.forEach(image => promoCarousel.appendChild(image));
+            }
+
+            // Adiciona o evento de clique no botão "Ver Mais" das promoções
+            verMaisPromoButton.addEventListener('click', avancarCarouselPromo);
+            arrowIconPromo.addEventListener('click', avancarCarouselPromo);
+
+
+        });
+
+        function dropdownMenu() {
+            var x = document.getElementById("menu-dropdown");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+
+        function closeDropdown() {
+            var x = document.getElementById("menu-dropdown");
+            x.style.display = "none";
+        }
+
+
+
+
+    </script>
 </body>
 
 </html>

@@ -11,7 +11,7 @@ body {
     min-height: 747px;
     max-height: 746.9px;
     padding: 185px 0;
-    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .voltar {
@@ -121,7 +121,7 @@ body {
 .descricao img {
     position: absolute;
     top: 90px;
-    right: 200px;
+    right: 150px;
     width: 400px;
 }
 
@@ -131,7 +131,7 @@ body {
     font-weight: 700;
     font-size: 20px;
     margin-top: -300px;
-    margin-right: 150px;
+    margin-right: 100px;
     width: 389px;
     float: right;
 }

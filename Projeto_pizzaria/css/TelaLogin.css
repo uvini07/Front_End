@@ -44,7 +44,7 @@ header {
 
 .chamada h2 {
     text-align: center;
-    margin-left: 160px;
+    margin-left: 300px;
     color: #f7faff;
     font-size: 40px;
 }
@@ -53,7 +53,7 @@ header {
     color: #e1e9f7;
     font-size: 21px;
     width: 1030px;
-    margin: 10px 230px 0px;
+    margin: 10px 210px 0px;
 
 }
 
@@ -148,7 +148,7 @@ header {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
 
     .chamada h2 {
         margin-left: -10px;
