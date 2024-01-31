@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'comfortaa', cursive;
+}
+
+body {
+    background-image: url(../imgs/bg_país.svg);
+    background-size: cover;
+    background-position-y: -40px;
+}
+
+.logo img {
+    background-size: 100% 100%;
+    width: 300px;
+    height: max-content;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.carousel-container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.carousel {
+    margin-top: 200px;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    width: 33.33%;
+    flex-shrink: 0;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.letras {
+    background-color: #00147B;
+    width: 196px;
+    height: 55px;
+    border-radius: 39px 39px 0px 0px;
+    margin-top: 580px;
+    position: absolute;
+    left: 51%;
+    transform: translateX(-50%);
+    transition: width 0.5s, left 0.5s;
+}
+
+.letras p {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.letras:hover {
+    width: calc(94% + 0px);
+    text-align: center;
+    border-radius: 29px 29px 0px 0px;
+}
+
+/* Outros estilos CSS */
+
+.alphabet-list {
+    font-size: 20px;
+    margin-left: 150px;
+    margin-top: 20px;
+    list-style: none;
+    color: white;
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.alphabet-list li:hover {
+    transition: 1ms;
+    font-size: 25px;
+    color: rgb(211, 224, 252);
+    text-shadow: 3px 0px 7px rgba(14, 0, 209, 0.8), -3px 0px 7px rgba(51, 11, 209, 0.8), 0px 4px 7px rgba(22, 3, 148, 0.8);
+}

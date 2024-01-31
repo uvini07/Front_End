@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AtlasWord|Países</title>
+
+    <link rel="stylesheet" href="./css/Telapaís.css">
+
+    <!-- Links das Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Karantina&display=swap" rel="stylesheet">
+
+    <!-- Links dos Icones -->
+    <link REL="SHORTCUT ICON" HREF="./imgs/Logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="logo">
+        <img src="./imgs/LOGO_black 1.svg" alt="">
+    </div>
+
+    <div class="carousel-container">
+        <div class="carousel">
+          <img src="imagem1.jpg" alt="Imagem 1">
+          <img src="imagem2.jpg" alt="Imagem 2">
+          <img src="imagem3.jpg" alt="Imagem 3">
+          <img src="imagem4.jpg" alt="Imagem 4">
+          <img src="imagem5.jpg" alt="Imagem 5">
+          <img src="imagem6.jpg" alt="Imagem 6">
+          <img src="imagem7.jpg" alt="Imagem 7">
+          <img src="imagem8.jpg" alt="Imagem 8">
+          <img src="imagem9.jpg" alt="Imagem 9">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+      </div>
+      
+
+    <div class="letras" onmouseenter="changeAlphabet()" onmouseleave="changeBack()">
+        <p id="letters">A-Z</p>
+        <ul id="alphabet" class="alphabet-list">
+            <!-- Lista do alfabeto -->
+        </ul>
+    </div>
+
+    <script src="./js/letras.js"></script> 
+</body>
+
+</html>
